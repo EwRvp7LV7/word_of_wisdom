@@ -7,7 +7,7 @@ pub const SOLUTION_STATE_SIZE: usize = 4;
 #[derive(Serialize, Deserialize, PartialEq, Debug)]
 pub struct Puzzle {
     pub complexity: u8,
-    pub value: [u8; PUZZLE_SIZE],
+    pub value: [u8; PUZZLE_SIZE], //array u8, it size PUZZLE_SIZE
 }
 
 pub type PuzzleSolution = [u8; SOLUTION_SIZE];

@@ -1,6 +1,7 @@
 use anyhow::Result;
 use std::error::Error;
-use word_of_wisdom::{server_addr_from_env, setup_logging, Client};
+use word_of_wisdom::{server_addr_from_env, setup_logging};
+use word_of_wisdom::transport::client::Client;
 
 fn main() -> Result<(), Box<dyn Error>> {
     setup_logging();
